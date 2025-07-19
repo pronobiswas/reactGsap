@@ -1,0 +1,23 @@
+.menu_item {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s all linear;
+}
+.menu_item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 10%;
+  height: 2px;
+  background: linear-gradient(45deg, aqua, tan);
+  transition: 0.5s all linear;
+}
+
+.menu_item:hover {
+  color: aqua;
+  cursor: pointer;
+}
+.menu_item:hover::after {
+  width: 110%;
+}
